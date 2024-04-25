@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natīvus - Flora Nativa de la Argentina</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
+
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/9b9213a256.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+
+    <!-- <link rel="stylesheet" href="https://use.typekit.net/szp8gju.css"> -->
+
+</head>
+
+<body>
+    <header>
+        <nav class="barraNavegacion">
+            <a href="#">
+                <img src="assets/img/logo_blanco-01.svg" alt="logo" width="100" loading="lazy">
+            </a>
+            <form action="buscar" class="buscador">
+                <input type="text" placeholder="Buscar especies">
+                <input type="submit" value="Buscar">
+            </form>
+            <ul>
+                <li><a href="#especies">Especies</a></li>
+                <li><a href="#cercatuyo">Cerca tuyo</a></li>
+                <li><a href="pages/registro.html">Registro</a></li>
+                <li><a href="pages/iniciarsesion.html">Iniciar Sesión</a></li>
+            </ul>
+            <i class="fi fi-sr-menu-burger"></i>
+        </nav>
+    </header>
+
+    <main>
+        <!-- PORTADA-->
+        <section class="portada" id="inicio">
+            <div class="textoPortada">
+                <div class="tituloPortada">
+                    <h1>Descubrí la flora nativa de Argentina</h1>
+                </div>
+                <div class="bajada">
+
+                    <h3>Las plantas nativas son aquellas especies botánicas originarias de una ecorregión. Están
+                        adaptadas al clima, suelo y demás recursos de ese ecosistema determinado.</h3>
+                    <h3 class="bold">Identificá la flora nativa de tu tierra. </h3>
+                    <a href="pages/registro.html">Registrarse</a>
+
+                    <!-- <h3>Cuidemos y conservemos nuestro hábitat natural.</h3>-->
+                </div>
+            </div>
+
+            <div class="imagenPortada">
+                <img src="assets/img/gif-flores2.gif" atl="animación flores portada" loading="lazy">
+            </div>
+        </section>
+
+
+        <!-- FILTRO-->
+
+        <section class="filtroInicio">
+            <h3>Explorá la flora por clases </h3>
+            <div class="botonesFiltroInicio">
+
+                <button class="botonClases" href="#arboles">
+                    <img src="assets/img/arboles.svg" class="colorSvg"></img>
+                    <span>Árboles</span>
+                </button>
+
+                <button class="botonClases" href="#especies">
+                    <img src="assets/img/arbustos.svg"></img>
+                    <span>Arbustos</span>
+                </button>
+
+                <button class="botonClases" href="#especies">
+                    <img src="assets/img/herbaceas.svg"></img>
+                    <span>Herbáceas</span>
+                </button>
+
+                <button class="botonClases" href="#especies">
+                    <img src="assets/img/trepadora.svg"></img>
+                    <span>Trepadoras</span>
+                </button>
+
+                <button class="botonClases" href="#especies">
+                    <img src="assets/img/gramineas.svg"></img>
+                    <span>Gramíneas</span>
+                </button>
+
+
+
+                <button class="botonClases" href="#especies">
+                    <img src="assets/img/acuaticas.svg"></img>
+                    <span>Acuáticas</span>
+                </button>
+
+
+                <button class="botonClases" href="#especiess">
+                    <img src="assets/img/palmera.svg"></img>
+                    <span>Palmeras</span>
+                </button>
+
+                <button class="botonClases" href="#especies">
+                    <img src="assets/img/cactus_1.svg"></img>
+                    <span>Cactus</span>
+                </button>
+
+            </div>
+        </section>
+
+
+
+
+        <!-- ESPECIES EN TU ÁREA-->
+
+        <section class="especiesZona" id="especies">
+            <h2>Las especies de tu zona</h2>
+
+            <div class="galeriaEspecies">
+
+
+                <a class="cardEspecie" href="pages/detalle.html">
+                    <div class="especie">
+                        <div class="recorte">
+                            <img src="assets/img/sunchillo_pascalia glauca.jpg" atl="sunchillo" loading="lazy">
+                            <div class="etiqueta recuadroEtiqueta">
+                                <h6>Herbácea</h6>
+                            </div>
+                        </div>
+                        <div class="tituloEspecie">
+                            <h3>Sunchillo</h3>
+                            <h4>Pascalia glauca</h4>
+                        </div>
+                    </div>
+                </a>
+
+
+
+                <a class="cardEspecie" href="pages/detalle.html">
+                    <div class="especie">
+                        <div class="recorte">
+                            <img src="assets/img/Flor de Papel_Verbena bonariensis 2.jpeg" atl="verbena bonariensis"
+                                loading="lazy">
+                            <div class="etiqueta recuadroEtiqueta">
+                                <h6>Herbácea</h6>
+                            </div>
+                        </div>
+                        <div class="tituloEspecie">
+                            <h3>Verbena</h3>
+                            <h4>Verbena bonariensis</h4>
+                        </div>
+                        <div class="etiqueta recuadroEtiqueta">
+                            <h6>Herbácea</h6>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="cardEspecie" href="pages/detalle.html">
+                    <div class="especie">
+                        <div class="recorte">
+                            <img src="assets/img/Ceibo_Erythrina crista-galli.jpeg" atl="ceibo" class="recorte"
+                                loading="lazy">
+                            <div class="etiqueta recuadroEtiqueta">
+                                <h6>Árbol</h6>
+                            </div>
+                        </div>
+                        <div class="tituloEspecie">
+                            <h3>Ceibo</h3>
+                            <h4>Erythrina crista-galli</h4>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="cardEspecie" href="pages/detalle.html">
+                    <div class="especie">
+                        <div class="recorte">
+                            <img src="assets/img/Azucena del Río_Zephyranthes candida.jpeg" atl="azucena del rio"
+                                class="recorte" loading="lazy">
+                            <div class="etiqueta recuadroEtiqueta">
+                                <h6>Acúatica</h6>
+                            </div>
+                        </div>
+                        <div class="tituloEspecie">
+                            <h3>Azucena del Río</h3>
+                            <h4>Zephyranthes candida</h4>
+                        </div>
+                    </div>
+                </a>
+
+
+
+                <a class="cardEspecie" href="pages/detalle.html">
+                    <div class="especie">
+                        <div class="recorte">
+                            <img src="assets/img/Malvavisco_ Sphaeralcea bonariensis_3.jpeg" atl="malvavisco"
+                                class="recorte" loading="lazy">
+                            <div class="etiqueta recuadroEtiqueta">
+                                <h6>Herbácea</h6>
+                            </div>
+                        </div>
+                        <div class="tituloEspecie">
+                            <h3>Malvavisco</h3>
+                            <h4>Sphaeralcea bonariensis</h4>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="cardEspecie" href="pages/detalle.html">
+                    <div class="especie">
+                        <div class="recorte">
+                            <img src="assets/img/Mburucuyá_Passiflora caerulea.jpeg" atl="pasionaria" class="recorte"
+                                loading="lazy">
+                            <div class="etiqueta recuadroEtiqueta">
+                                <h6>Trepadora</h6>
+                            </div>
+                        </div>
+                        <div class="tituloEspecie">
+                            <h3>Pasionaria</h3>
+                            <h4>Passiflora caerulea</h4>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="cardEspecie" href="pages/detalle.html">
+                    <div class="especie">
+                        <div class="recorte">
+                            <img src="assets/img/Carqueja_Baccharis trimera.jpeg" atl="carqueja" class="recorte"
+                                loading="lazy">
+                            <div class="etiqueta recuadroEtiqueta">
+                                <h6>Herbácea</h6>
+                            </div>
+                        </div>
+                        <div class="tituloEspecie">
+                            <h3>Carqueja</h3>
+                            <h4>Baccharis trimera</h4>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a class="cardEspecie" href="pages/detalle.html">
+                    <div class="especie">
+                        <div class="recorte">
+                            <img src="assets/img/cortadera.jpeg" atl="cortadera" class="recorte" loading="lazy">
+                            <div class="etiqueta recuadroEtiqueta">
+                                <h6>gramínea</h6>
+                            </div>
+                        </div>
+                        <div class="titulo">
+                            <h3>Cortadera</h3>
+                            <h4>Cortaderia selloana</h4>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="cardEspecie" href="pages/detalle.html">
+                    <div class="especie">
+                        <div class="recorte">
+                            <img src="assets/img/Sombrilla_Cyperus eragrostis.jpeg" atl="sombrilla" class="recorte"
+                                loading="lazy">
+                            <div class="etiqueta recuadroEtiqueta">
+                                <h6>Herbácea</h6>
+                            </div>
+                        </div>
+                        <div class="tituloEspecie">
+                            <h3>Sombrilla</h3>
+                            <h4>Cyperus eragrostis</h4>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="cardEspecie" href="pages/detalle.html">
+                    <div class="especie">
+                        <div class="recorte">
+                            <img src="assets/img/Espinillo_Vachellia caven.jpeg" atl="espinillo" class="recorte"
+                                loading="lazy">
+                            <div class="etiqueta recuadroEtiqueta">
+                                <h6>árbol</h6>
+                            </div>
+                        </div>
+                        <div class="tituloEspecie">
+                            <h3>Espinillo</h3>
+                            <h4>Vachellia caven</h4>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="cardEspecie" href="pages/detalle.html">
+                    <div class="especie">
+                        <div class="recorte">
+                            <img src="assets/img/escoba dura_sida rombifolia.jpeg" atl="escoba dura" class="recorte"
+                                loading="lazy">
+                            <div class="etiqueta recuadroEtiqueta">
+                                <h6>Herbácea</h6>
+                            </div>
+                        </div>
+                        <div class="tituloEspecie">
+                            <h3>Escoba dura</h3>
+                            <h4>Sida rombifolia</h4>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a class="cardEspecie" href="pages/detalle.html">
+                    <div class="especie">
+                        <div class="recorte">
+                            <img src="assets/img/Verbena Rastrera Lantana montevidensis2.jpeg" atl="verbena rastrera"
+                                class="recorte" loading="lazy">
+                            <div class="etiqueta recuadroEtiqueta">
+                                <h6>Herbácea</h6>
+                            </div>
+                        </div>
+                        <div class="tituloEspecie">
+                            <h3>Verbena Rastrera</h3>
+                            <h4>Lantana montevidensis</h4>
+                        </div>
+                    </div>
+                </a>
+
+
+            </div>
+
+            <div class="botonesGaleria">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>></button>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- LAS MAS POPULARES-->
+
+        <aside class="masPopulares">
+            <h4 class="tituloMasPopulares">Las más populares</h4>
+            <div class="populares">
+
+
+                <a class="especiePopular" href="pages/detalle.html">
+                    <img src="assets/img/Campanilla Palmeada_Ipomoea cairica.jpeg" atl="ceibo" class="recorte"
+                        loading="lazy">
+                </a>
+                <a class="especiePopular" href="pages/detalle.html">
+                    <img src="assets/img/Falso Caraguatá-Eryngium paniculatum.jpg" atl="falso caraguatá" class="recorte"
+                        loading="lazy">
+                </a>
+
+                <a class="especiePopular" href="pages/detalle.html">
+                    <img src="assets/img/Lantana Morada_Lantana megapotamica.jpeg" atl="lantana morada" class="recorte"
+                        loading="lazy">
+                </a>
+
+
+
+                <a class="especiePopular" href="pages/detalle.html">
+                    <img src="assets/img/Camalote_Pontederia cordata.jpeg" atl="camalote" class="recorte"
+                        loading="lazy">
+                </a>
+
+                <a class="especiePopular" href="pages/detalle.html">
+                    <img src="assets/img/Lirio del Bajo_Cypella herbertii.jpg" atl="lirio del bajo" class="recorte"
+                        loading="lazy">
+                </a>
+
+                <a class="especiePopular" href="pages/detalle.html">
+                    <img src="assets/img/Santa Lucía_Commelina erecta.jpg" atl="santa lucía" class="recorte"
+                        loading="lazy">
+                </a>
+
+
+
+                <a class="especiePopular" href="pages/detalle.html">
+                    <img src="assets/img/Barba de Chivo_Erythrostemon gilliesii.jpg" atl="barba de chivo"
+                        class="recorte" loading="lazy">
+                </a>
+
+
+
+                <a class="especiePopular" href="pages/detalle.html">
+                    <img src="assets/img/Guarán_Tecoma stans.jpeg" atl="guarán" class="recorte" loading="lazy">
+                </a>
+
+                <a class="especiePopular" href="pages/detalle.html">
+                    <img src="assets/img/Plumerillo Negro_Oxypetalum solanoides.jpg" atl="guarán" class="recorte"
+                        loading="lazy">
+                </a>
+
+                <a class="especiePopular" href="pages/detalle.html">
+                    <img src="assets/img/Pucará_Heliotropium amplexicaule.jpg" atl="pucará" class="recorte"
+                        loading="lazy">
+                </a>
+
+
+
+
+            </div>
+        </aside>
+    </main>
+
+
+
+
+    <!-- FOOTER-->
+
+    <footer>
+
+        <div class="navTop">
+            <img src="assets/img/logo_negro.svg" alt="logo" width="100" loading="lazy">
+            <a href="#inicio"><i class="fi fi-tr-arrow-small-up"></i> </a>
+        </div>
+
+        <div class="contenedorNav">
+            <div class="newsletter">
+                <form>
+                    <p>Suscribite a nuestro newsletter y mantenete al tanto de todas las novedades</p>
+                    <div class="emailNewsletter">
+                        <input type="mail" name="mail" id="mail" placeholder="E-mail" required>
+                        <input type="submit" value="Suscribirse">
+                    </div>
+
+                </form>
+            </div>
+
+            <nav class="navRecursos">
+                <p>Recursos</p>
+                <ul>
+                    <li>
+                        <a href="">Acerca de</a>
+                    </li>
+                    <li>
+                        <a href="">¿Por qué cuidar la flora nativa?</a>
+                    </li>
+                    <li>
+                        <a href="">Preguntas frecuentes</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="navAyuda">
+                <p>Ayuda</p>
+                <ul>
+                    <li>
+                        <a href="">Privacidad</a>
+                    </li>
+                    <li>
+                        <a href="">Contactanos</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="redes">
+            <p>Vitisá nuestras redes</p>
+            <div class="botonesRedes">
+                <a href="https://www.instagram.com/" target="_blank"><i class="fi fi-brands-instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fi fi-brands-twitter-alt"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fi fi-brands-youtube"></i></a>
+                <a href="https://www.tiktok.com/" target="_blank"><i class="fi fi-brands-tik-tok"></i></a>
+            </div>
+        </div>
+
+        <hr>
+        <div class="legales">
+            <p>©2024 Natīvus®</p>
+            <p>Todos los derechos reservados</p>
+            <p>Siito diseñado por <a href="https:cotyferenza.myportfolio.com/" target="_blank">Coty</a>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
