@@ -18,6 +18,7 @@
         href='https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
     <link rel='stylesheet'
         href='https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -32,7 +33,7 @@
             </form>
             <ul>
                 <li><a href="../index.html#especies">Especies</a></li>
-                <li><a href="#cercatuyo">Cerca tuyo</a></li>
+                <li><a href="../index.html#especies">Cerca tuyo</a></li>
                 <li><a href="../pages/registro.html">Registro</a></li>
                 <li><a href="../pages/iniciarsesion.html">Iniciar Sesión</a></li>
             </ul>
@@ -46,8 +47,7 @@
         <section class="registro">
 
             <div class="registroImagen">
-                <img src="../assets/img/Palmera Yatay_Butia yatay_.jpg" atl="fotografía palmeras"
-                    loading="lazy">
+                <img src="../assets/img/palmera yatay_butia yatay_.jpg" atl="fotografía palmeras" loading="lazy">
             </div>
 
 
@@ -55,42 +55,58 @@
                 <h2>Registro</h2>
 
 
-                <form class="formulario">
+                <form class="formulario" id="sesionFormulario">
 
                     <div class="registroInput">
-                        <div class="inputContainer">
-                            <i class="fi fi-sr-user"></i>
-                            <input type="text" name="nombre" id="name" placeholder="Nombre" required required style="width: 150px;">
+
+                        <div class="camposForm">
+                            <div class="inputContainer">
+                                <i class="fi fi-sr-user"></i>
+                                <input type="text" name="nombre" id="name" placeholder="Nombre" required required
+                                    style="width: 150px;">
+                            </div>
+                            <div class="error-message" id="errorName"></div>
                         </div>
-                        <div class="inputContainer">
-                            <i class="fi fi-sr-picpeople-filled"></i>
-                            <input type="text" name="apellido" id="surname" placeholder="Apellido" required required style="width: 150px;">
+
+                        <div class="camposForm">
+                            <div class="inputContainer">
+                                <i class="fi fi-sr-picpeople-filled"></i>
+                                <input type="text" name="apellido" id="surname" placeholder="Apellido" required required
+                                    style="width: 150px;">
+                            </div>
+                            <div class="error-message" id="errorSurname"></div>
                         </div>
-                        <div class="inputContainer">
-                            <i class="fi fi-sr-envelope"></i>
-                            <input type="mail" name="mail" id="mail" placeholder="E-mail" required required style="width: 150px;">
+
+                        <div class="camposForm">
+                            <div class="inputContainer">
+                                <i class="fi fi-sr-envelope"></i>
+                                <input type="mail" name="mail" id="mail" placeholder="E-mail" required required
+                                    style="width: 150px;">
+                            </div>
+                            <div class="error-message" id="errorMail"></div>
                         </div>
-                        <div class="inputContainer">
-                            <i class="fi fi-sr-lock"></i>
-                            <input type="password" name="contraseña" id="password" placeholder="Contraseña" required required style="width: 150px;">
+
+                        <div class="camposForm">
+                            <div class="inputContainer">
+                                <i class="fi fi-sr-lock"></i>
+                                <input type="password" name="contraseña" id="password" placeholder="Contraseña" required
+                                    required style="width: 150px;">
+                            </div>
                         </div>
+                        <div class="error-message" id="errorPassword"></div>
                     </div>
 
                     <div class="selectores">
                         <div class="registroProv">
                             <label for="provincia">Seleccioná tu provincia</label>
-                            <select name="provincia" id="provincia" >
-                                <option value="Buenos Aires">Buenos Aires</option>
-                                <option value="Buenos Aires">Santa Fe</option>
-                                <option value="Buenos Aires">Entre Rios</option>
-                                <option value="Buenos Aires">Córdoba</option>
-                                <option value="Buenos Aires">Entre Rios</option>
+                            <select name="provincia" id="provincias" required>
+                                <option selected>Buenos Aires</option>
                             </select>
                         </div>
 
                         <div class="ocupacion">
                             <label for="ocupacion">¿A qué te dedicás?</label>
-                            <select name="ocupacion" id="ocupacion">
+                            <select name="ocupacion" id="ocupacion" required>
                                 <option>Estudiante</option>
                                 <option>Docente</option>
                                 <option>Viverista</option>
@@ -102,41 +118,19 @@
                         </div>
                     </div>
 
-                    <!-- <div class="ocupacion">
-                        <legend for="ocupacion">¿A qué te dedicás?</legend>
-                        <label for="estudiante">Estudiante
-                            <input type="checkbox" name="ocupation" id="estudiante" value="estudiante" checked>
-                        </label>
-                        <label for="docente">Docente
-                            <input type="checkbox" name="ocupation" id="docente" value="docente">
-                        </label>
-                        <label for="viverista">Viverista
-                            <input type="checkbox" name="ocupation" id="viverista" value="viverista">
-                        </label>
-                        <label for="jardinero">Jardinero
-                            <input type="checkbox" name="ocupation" id="jardinero" value="jardinero">
-                        </label>
-                        <label for="estudiante">Aficionado
-                            <input type="checkbox" name="ocupation" id="aficionado" value="aficionado">
-                        </label>
-                        <label for="cientifico">Científico
-                            <input type="checkbox" name="ocupacion" id="cientifico" value="cientifico">
-                        </label>
-                        <label for="estudiante">Otro
-                            <input type="checkbox" name="ocupation" id="otro" value="otro">
-                        </label>
-                    </div>-->
-
                     <div class="terminos">
                         <label for="terminos">Acepto términos y condiciones</label>
                         <input type="checkbox" name="terminos" id="terminos" value="terminos" required>
                     </div>
 
+                    <div class="botonRegistrarse">
+                        <input type="submit" value="registrarse">
+                    </div>
+
                 </form>
 
-                <div class="botonRegistrarse">
-                    <input type="submit" value="registrarse">
-                </div>
+
+
 
                 <div class="cuentaSesion">
                     <p>¿Ya tenés una cuenta? <a href="../pages/iniciarsesion.html">Iniciar sesión</a></p>
@@ -200,7 +194,7 @@
         </div>
 
         <div class="redes">
-            <p>Vitisá nuestras redes</p>
+            <p>Visitá nuestras redes</p>
             <div class="botonesRedes">
                 <a href="https://www.instagram.com/" target="_blank"><i class="fi fi-brands-instagram"></i></a>
                 <a href="https://twitter.com/" target="_blank"><i class="fi fi-brands-twitter-alt"></i></a>
@@ -218,6 +212,13 @@
         </div>
 
     </footer>
+
+    <script src="../js/validacion_inicio_sesion.js"></script>
+    <script src="../js/api_provincias.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

@@ -68,6 +68,7 @@ header {
                     text-align: center;
                     padding-bottom: 3px;
                     position: relative;
+                    cursor: pointer;
                 }
 
                 a::after {
@@ -124,6 +125,7 @@ header {
             border-radius: 20px;
             margin-left: 5px;
             font-weight: 500;
+            cursor: pointer;
 
 
         }
@@ -222,6 +224,7 @@ header {
                 border-radius: 25px;
                 margin-left: 5px;
                 margin-left: -2px;
+                cursor: pointer;
             }
 
             a:hover {
@@ -247,6 +250,7 @@ header {
     img {
         width: 700px;
         /* margin: 0;*/
+        scroll-behavior: smooth;
     }
 }
 
@@ -292,15 +296,11 @@ header {
             height: 90px;
             cursor: pointer;
 
+
             img {
                 display: inline-block;
                 width: 50px;
                 margin-right: 5px;
-            }
-
-            colorSvg:hover {
-                fill: #121212;
-
             }
 
             span {
@@ -314,8 +314,9 @@ header {
         }
 
         .botonClases:hover {
-            background-color: #90DDA6;
-            color: #121212;
+            background-color: #1b1b1b;
+            box-shadow: 7px 7px 14px #070707,
+                -7px -7px 14px #1d1d1d;
         }
     }
 }
@@ -332,8 +333,149 @@ header {
 
     h2 {
         text-align: center;
-        padding-bottom: 70px;
+        padding-bottom: 50px;
     }
+
+    .localizacion {
+        display: flex;
+        flex-direction: row;
+        vertical-align: center;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 30px;
+
+        #compartir {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            border-radius: 22px;
+            border-width: 0px;
+            padding: 5px 20px;
+            height: 44PX;
+            margin-bottom: 12px;
+            background-color: #90DDA6;
+            cursor: pointer;
+            font-size: 1rem;
+            font-variation-settings: "wght" 500;
+            color: #2b2929;
+
+            i {
+                padding-right: 5px;
+            }
+        }
+
+        #compartir:hover {
+            background-color: #121212;
+            color: #e6e6e6;
+        }
+
+
+        #mostrarCiudad {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            border-radius: 22px;
+            border-width: 0px;
+            padding: 5px 20px;
+            height: 44PX;
+            margin-bottom: 12px;
+            background-color: #e6e6e6;
+            font-size: 1rem;
+            font-variation-settings: "wght" 500;
+            color: #2b2929;
+
+
+
+
+            i {
+                padding-right: 5px;
+            }
+        }
+    }
+
+    .galeriaEspecies {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+        .cardEspecie {
+            .especie {
+                position: relative;
+
+                h3 {
+                    padding-top: 20px;
+                }
+
+                h4 {
+                    font-size: 1.2rem;
+                    font-style: italic;
+                    font-variation-settings: "wght" 300;
+                    padding-top: 5px;
+                }
+
+                .etiqueta {
+                    display: flex;
+                    text-align: center;
+
+                    h6 {
+                        color: #121212;
+                        ;
+                        text-transform: uppercase;
+                        font-size: 0.9rem;
+                        font-variation-settings: "wght" 200;
+                        letter-spacing: 1px;
+                        /*border-style: solid;
+                    border-width: 2px;
+                    border-color: #eeeeee;*/
+                        background-color: #eeeeee;
+                        padding: 5px 7px;
+                        padding-bottom: 3px;
+                        border-radius: 3px;
+                    }
+                }
+
+                .recuadroEtiqueta {
+                    opacity: 0;
+                    position: absolute;
+                    top: 15px;
+                    left: 15px;
+                    z-index: 2;
+                    transition: all 0.5s;
+                }
+
+                .recorte {
+                    width: 320px;
+                    height: 320px;
+                    border-radius: 10px;
+                    overflow: hidden;
+
+                    &:hover {
+                        box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        transition: all 1s;
+                    }
+
+                    &:hover img {
+                        transform: scale(1.3);
+                    }
+                }
+
+                .recorte:hover .recuadroEtiqueta {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
 
     .botonesGaleria {
         display: inline-block;
@@ -365,88 +507,13 @@ header {
         button:hover {
             background-color: #90DDA6;
             color: #121212;
+            cursor: pointer;
         }
     }
 }
 
 
 
-.galeriaEspecies {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-
-    .cardEspecie {
-        .especie {
-            position: relative;
-
-            h3 {
-                padding-top: 20px;
-            }
-
-            h4 {
-                font-size: 1.2rem;
-                font-style: italic;
-                font-variation-settings: "wght" 300;
-                padding-top: 5px;
-            }
-
-            .etiqueta {
-                display: flex;
-                text-align: center;
-
-                h6 {
-                    color: #121212;
-                    ;
-                    text-transform: uppercase;
-                    font-size: 0.9rem;
-                    font-variation-settings: "wght" 200;
-                    letter-spacing: 1px;
-                    /*border-style: solid;
-                    border-width: 2px;
-                    border-color: #eeeeee;*/
-                    background-color: #eeeeee;
-                    padding: 5px 7px;
-                    padding-bottom: 3px;
-                    border-radius: 3px;
-                }
-            }
-
-            .recuadroEtiqueta {
-                opacity: 0;
-                position: absolute;
-                top: 15px;
-                left: 15px;
-                z-index: 2;
-                transition: all 0.5s;
-            }
-
-            .recorte {
-                width: 320px;
-                height: 320px;
-                border-radius: 10px;
-                overflow: hidden;
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    transition: all 1s;
-                }
-
-                &:hover img {
-                    transform: scale(1.3);
-                }
-            }
-
-            .recorte:hover .recuadroEtiqueta {
-                opacity: 1;
-            }
-        }
-    }
-}
 
 
 
@@ -465,7 +532,7 @@ header {
         text-align: center;
         padding-bottom: 70px;
         padding-top: 20px;
-        color: #90DDA6;
+        color: #90dda6;
     }
 
     .populares {
@@ -487,6 +554,7 @@ header {
             flex-shrink: 0;
             overflow: hidden;
 
+
             img {
                 width: 100%;
                 height: 100%;
@@ -498,6 +566,11 @@ header {
                 transform: scale(1.2);
             }
         }
+
+        .especiePopular :hover {
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 16px, rgba(0, 0, 0, 0.05) 0px 8px 32px;
+        }
+
     }
 }
 
@@ -508,6 +581,7 @@ header {
     padding-top: 20px;
     margin-top: 10px;
     scroll-padding: 50px 0 0 0;
+    cursor: pointer;
 }
 
 .populares::-webkit-scrollbar-button {
@@ -518,6 +592,7 @@ header {
     height: 10px;
     background-color: #90DDA6;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .populares::-webkit-scrollbar-track {
@@ -756,7 +831,7 @@ footer {
                         padding: 5px 14PX;
                         font-size: 1rem;
                         border-color: #90DDA6;
-                        color: #eeeeee;
+                        color: #2b2929;
 
                         &:active {
                             border-color: #121212;
@@ -782,6 +857,7 @@ footer {
                     input[type="submit" i]:hover {
                         background-color: #121212;
                         color: #eeeeee;
+                        cursor: pointer;
                     }
                 }
             }
@@ -826,6 +902,19 @@ footer {
 
 @media screen and (max-width:480px) {
 
+    .galeriaEspecies {
+        gap: 15px;
+
+        .cardEspecie {
+            .especie {
+                .recorte {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+    }
+
     .masPopulares {
         .populares {
             .especiePopular {
@@ -837,6 +926,7 @@ footer {
 
     footer {
         .navTop {
+
             .fi,
             .fi-tr-arrow-small-up {
                 color: #121212;
@@ -908,6 +998,9 @@ footer {
         padding-right: 20px;
     }
 
+
+
+
     .especiesZona {
         padding-left: 20px;
         padding-right: 20px;
@@ -919,7 +1012,7 @@ footer {
             padding-bottom: 30px;
             text-align: center;
         }
-
+       
         .botonesGaleria {
             margin-bottom: 90px;
         }
@@ -928,13 +1021,21 @@ footer {
     }
 
     .galeriaEspecies {
-        gap: 50px;
+        gap: 25px;
+
+        .cardEspecie {
+            .especie {
+                .recorte {
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+        }
     }
 
-    .recorte {
-        width: 150px;
-        height: 150px;
-    }
+
+   
+
 
     .masPopulares {
         padding-left: 20px;
@@ -1268,6 +1369,7 @@ footer {
                 li {
                     a {
                         font-size: 1rem;
+                        text-align: left;
                     }
                 }
             }
@@ -1276,7 +1378,7 @@ footer {
         .newsletter {
             gap: 15px;
             padding-right: 25px;
-            max-width: 400px;
+            max-width: 300px;
 
             .form {
                 p {
@@ -1341,6 +1443,7 @@ footer {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+
 
                 .inputContainer {
                     display: flex;
@@ -1587,7 +1690,7 @@ footer {
         }
 
         .registroFormulario {
-            max-height: 70vh;
+            max-height: 80vh;
             max-width: 100%;
             padding-right: 20px;
             padding-left: 20px;
@@ -1686,61 +1789,64 @@ footer {
             justify-content: center;
             align-items: center;
 
-            .inputContainer {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                border-style: inset;
-                border-radius: 22px;
-                border: 1px solid;
-                width: 400px;
-                padding: 5px 14px;
-                height: 44PX;
-                margin-bottom: 12px;
-                background-color: #e6e6e6;
-                border-color: #c4c4c4;
+            .camposForm {
 
-
-                &:active {
-                    border: 2px solid #121212;
-                }
-
-
-                i {
-                    position: absolute;
-                    padding-left: 5px;
-                    padding-right: 10px;
-                    color: #2b2929;
-                }
-
-
-                input {
-                    font-size: 1rem;
-                    color: #2b2929;
-                    padding-left: 30px;
+                .inputContainer {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    border-style: inset;
+                    border-radius: 22px;
+                    border: 1px solid;
+                    width: 400px;
+                    padding: 5px 14px;
+                    height: 44PX;
+                    margin-bottom: 10px;
                     background-color: #e6e6e6;
-                    border: none;
-                    outline: none;
+                    border-color: #c4c4c4;
 
-                    &:hover {
-                        outline: none;
-                    }
 
                     &:active {
-                        outline: none;
+                        border: 2px solid #121212;
                     }
 
-                    &:focus {
-                        outline: none;
+
+
+                    i {
+                        position: absolute;
+                        padding-left: 5px;
+                        padding-right: 10px;
+                        color: #2b2929;
                     }
 
-                    &::after {
-                        outline: none;
-                    }
 
+                    input {
+                        font-size: 1rem;
+                        color: #2b2929;
+                        padding-left: 30px;
+                        background-color: #e6e6e6;
+                        border: none;
+                        outline: none;
+
+                        &:hover {
+                            outline: none;
+                        }
+
+                        &:active {
+                            outline: none;
+                        }
+
+                        &:focus {
+                            outline: none;
+                        }
+
+                        &::after {
+                            outline: none;
+                        }
+                    }
                 }
-            }
 
+            }
 
             .contenedorRecordar {
                 justify-content: center;
@@ -1771,32 +1877,35 @@ footer {
                     text-decoration: underline;
                 }
             }
-        }
 
-        .botonAcceder {
-            padding-top: 30px;
 
-            input[type="submit" i] {
-                border: none;
-                padding: 15px 20px;
-                padding-bottom: 11px;
-                font-size: 1rem;
-                font-variation-settings: "wght" 400;
-                text-transform: uppercase;
-                vertical-align: baseline;
-                letter-spacing: 0.5px;
-                color: #121212;
-                background-color: #90DDA6;
-                border-radius: 25px;
-                margin-left: 5px;
-                margin-left: -2px;
-            }
+            .botonAcceder {
+                padding-top: 30px;
 
-            input[type="submit" i]:hover {
-                background-color: #121212;
-                border: none;
-                border-width: 2px;
-                color: #90DDA6;
+                input[type="submit" i] {
+                    border: none;
+                    padding: 15px 20px;
+                    padding-bottom: 11px;
+                    font-size: 1rem;
+                    font-variation-settings: "wght" 400;
+                    text-transform: uppercase;
+                    vertical-align: baseline;
+                    letter-spacing: 0.5px;
+                    color: #121212;
+                    background-color: #90DDA6;
+                    border-radius: 25px;
+                    margin-left: 5px;
+                    margin-left: -2px;
+
+                }
+
+                input[type="submit" i]:hover {
+                    background-color: #121212;
+                    border: none;
+                    border-width: 2px;
+                    color: #90DDA6;
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -1867,7 +1976,7 @@ footer {
         }
 
         .inicioSesion {
-            max-height: 70vh;
+            max-height: 80vh;
             max-width: 100%;
             border-radius: 10px;
             position: absolute;
@@ -1896,7 +2005,18 @@ footer {
 
 
 
+/* ERROR FORMULARIO  */
+.camposForm {
+    padding-bottom: 20px;
+}
 
+.error-message {
+    font-size: 0.85rem;
+    font-variation-settings: "wght" 400;
+    color: rgb(150, 6, 6);
+    padding-top: 0px;
+    text-align: left;
+}
 
 
 
@@ -1937,7 +2057,7 @@ footer {
             .creditoImagen {
                 display: flex;
                 flex-direction: row;
-                z-index: 3;
+                z-index: 2;
                 position: absolute;
                 bottom: 0px;
                 right: 100px;
@@ -2034,6 +2154,7 @@ footer {
 
                     &:hover {
                         background-color: #eeeeee;
+                        cursor: pointer;
                     }
 
                 }
@@ -2090,6 +2211,12 @@ footer {
                     border-style: solid;
                     border-width: 1px;
                     border-radius: 25px;
+
+                    &:hover{
+                        border-color: #9b9b9b;
+                        cursor: pointer;
+
+                    }
                 }
             }
 
@@ -2204,8 +2331,6 @@ footer {
                     bottom: 0px;
                     right: 20px;
                 }
-
-
             }
 
             .portadaTitulo {
@@ -2242,7 +2367,7 @@ footer {
             gap: 30px;
 
             .datos {
-                .ecoregion {}
+                .ecorregion {}
             }
 
             .descripcion {

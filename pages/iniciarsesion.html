@@ -15,7 +15,9 @@
     <script src="https://kit.fontawesome.com/9b9213a256.js" crossorigin="anonymous"></script>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-brands/css/uicons-brands.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -37,9 +39,6 @@
 
 
 
-
-
-
     <main>
         <section class="inSesion" id="iniciarsesion">
             <div class="imagenInicioSesion">
@@ -47,29 +46,40 @@
             </div>
 
 
-            <div class="inicioSesion">
+            <div class="inicioSesion" >
                 <h2>Iniciar Sesión</h2>
 
-                <form class="iniciarSesion">
-                    <div class="inputContainer">
-                        <i class="fi fi-sr-envelope"></i>
-                        <input type="mail" name="mail" id="mail" placeholder="E-mail" required style="width: 150px;">
+                <form class="iniciarSesion" id="sesionFormulario">
+
+                    <div class="camposForm">
+                        <div class="inputContainer">
+                            <i class="fi fi-sr-envelope"></i>
+                            <input type="mail" name="mail" id="mail" placeholder="E-mail" required>
+                        </div>
+                        <div class="error-message" id="errorMail"></div>
                     </div>
-                    <div class="inputContainer">
-                        <i class="fi fi-sr-lock"></i>
-                        <input type="password" name="contraseña" id="password" placeholder="Contraseña" required>
+
+                    <div class="camposForm">
+                        <div class="inputContainer">
+                            <i class="fi fi-sr-lock"></i>
+                            <input type="password" name="contraseña" id="password" placeholder="Contraseña" required>
+                        </div>
+                        <div class="error-message" id="errorPassword"></div>
                     </div>
+
 
                     <div class="contenedorRecordar">
                         <label for="myCheckbox">Recordar</label>
-                        <input class="myCheckbox"type="checkbox" name="recordar">
+                        <input class="myCheckbox" type="checkbox" name="recordar">
                         <a href="#recordarcontraseña">¿Olvidaste tu contraseña?</a>
+                    </div>
+
+                    <div class="botonAcceder">
+                        <input type="submit" value="acceder">
                     </div>
                 </form>
 
-                <div class="botonAcceder">
-                    <input type="submit" value="acceder">
-                </div>
+
 
             </div>
         </section>
@@ -95,7 +105,7 @@
                 <form>
 
                     <p>Suscribite a nuestro newsletter y mantenete al tanto de todas las novedades</p>
-                    <div class="emailNewsletter">
+                    <div class="emailNewsletter" id="sesionFormulario">
                         <input type="mail" name="mail" id="mail" placeholder="E-mail" required>
                         <input type="submit" value="Suscribirse">
                     </div>
@@ -133,7 +143,7 @@
         </div>
 
         <div class="redes">
-            <p>Vitisá nuestras redes</p>
+            <p>Visitá nuestras redes</p>
             <div class="botonesRedes">
                 <a href="https://www.instagram.com/" target="_blank"><i class="fi fi-brands-instagram"></i></a>
                 <a href="https://twitter.com/" target="_blank"><i class="fi fi-brands-twitter-alt"></i></a>
@@ -147,10 +157,16 @@
         <div class="legales">
             <p>©2024 Natīvus®</p>
             <p>Todos los derechos reservados</p>
-            <p>Siito diseñado por Coty</p>
+            <p>Sitio diseñado por Coty</p>
         </div>
 
     </footer>
+    <script src="../js/validacion_inicio_sesion.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 
 </body>
 

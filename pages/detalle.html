@@ -11,13 +11,14 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <script src="https://kit.fontawesome.com/9b9213a256.js" crossorigin="anonymous"></script>
+
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-brands/css/uicons-brands.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
     <link rel='stylesheet'
         href='https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
     <link rel='stylesheet'
         href='https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 
@@ -33,7 +34,7 @@
             </form>
             <ul>
                 <li><a href="../index.html#especies">Especies</a></li>
-                <li><a href="#cercatuyo">Cerca tuyo</a></li>
+                <li><a href="../index.html#especies">Cerca tuyo</a></li>
                 <li><a href="../pages/registro.html">Registro</a></li>
                 <li><a href="../pages/iniciarsesion.html">Iniciar Sesión</a></li>
             </ul>
@@ -51,7 +52,7 @@
                 </div>
 
                 <div class="imagenDetalle">
-                    <img src="../assets/img/Flor de Papel_Verbena bonariensis_3.jpeg" atl="verbena" loading="lazy">
+                    <img src="../assets/img/flor de papel_verbena bonariensis_3.jpeg" atl="verbena" loading="lazy">
                 </div>
 
                 <div class="creditoImagen">
@@ -60,22 +61,17 @@
                 </div>
             </div>
 
-            <div class="portadaTitulo">
-
-                <div class="tituloDetalle">
+            <div class="portadaTitulo" >
+                <div class="tituloDetalle" data-aos="fade-up" data-aos-offset="50" data-aos-delay="15" data-aos-duration="1000">
                     <h2> Verbena</h2>
                     <h4>Verbena bonariensis</h4>
                     <h6>Herbácea</h6>
-
                 </div>
 
-
-
-                <div class="botonesEspecie">
+                <div class="botonesEspecie" data-aos="fade-up" data-aos-offset="50" data-aos-delay="15" data-aos-duration="1000">
                     <div class="contenedorBoton"><i class="fi fi-sr-heart"></i></div>
                     <div class="contenedorBoton"><i class="fi fi-sr-share"></i></div>
                 </div>
-
             </div>
 
 
@@ -84,10 +80,10 @@
 
         <section class="infoEspecie">
             <section class="datos">
-                <p>Ecorregión</p>  
+                <p>Ecorregión</p>
 
                 <div class="ecoregion">
-                  
+
                     <a class="etiquetaInfo">Espinal Sur</a>
                     <a class="etiquetaInfo">Espinal noreste</a>
                     <a class="etiquetaInfo">Esteros del Iberá</a>
@@ -133,7 +129,12 @@
                     es cuadrado con entrenudos muy largos. Las hojas son ovadas a ovado-lanceoladas con margen dentado y
                     miden 10 cm de largo.
                 </p>
-                <p>Se cultiva como planta ornamental para los jardines tradicionales y tolerantes a la sequía. Es una planta perenne, resistente en zonas del USDA 7-11. Se puede cultivar como anual en zonas donde no es resistente al invierno y florecerá en el primer año cuando se cultiva a partir de semillas. Sus largos internudos dan una apariencia escasa pero permiten que se entremezclen y convivan con otras plantas. Las flores que aparecen a mediados o finales del verano, son muy atractivos a las mariposas, y proveen néctar para las abejas nativas y muchos insectos beneficiosos del jardín.</p>
+                <p>Se cultiva como planta ornamental para los jardines tradicionales y tolerantes a la sequía. Es una
+                    planta perenne, resistente en zonas del USDA 7-11. Se puede cultivar como anual en zonas donde no es
+                    resistente al invierno y florecerá en el primer año cuando se cultiva a partir de semillas. Sus
+                    largos internudos dan una apariencia escasa pero permiten que se entremezclen y convivan con otras
+                    plantas. Las flores que aparecen a mediados o finales del verano, son muy atractivos a las
+                    mariposas, y proveen néctar para las abejas nativas y muchos insectos beneficiosos del jardín.</p>
             </section>
         </section>
     </main>
@@ -193,7 +194,7 @@
         </div>
 
         <div class="redes">
-            <p>Vitisá nuestras redes</p>
+            <p>Visitá nuestras redes</p>
             <div class="botonesRedes">
                 <a href="https://www.instagram.com/" target="_blank"><i class="fi fi-brands-instagram"></i></a>
                 <a href="https://twitter.com/" target="_blank"><i class="fi fi-brands-twitter-alt"></i></a>
@@ -206,10 +207,18 @@
         <div class="legales">
             <p>©2024 Natīvus®</p>
             <p>Todos los derechos reservados</p>
-            <p>Siito diseñado por Coty</p>
+            <p>Sitio diseñado por Coty</p>
         </div>
 
     </footer>
+
+    <script src="https://kit.fontawesome.com/9b9213a256.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 
 </body>
